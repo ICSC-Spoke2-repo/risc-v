@@ -1,0 +1,36 @@
+- restart VisionFive2 con Fedora
+
+ssh -p 2025 user@tcretico (password: chiedere a tommaso)
+
+come root
+
+mount /dev/sdb1 /mnt/hdd/
+mount /dev/sda1 /mnt/ssd/
+
+cd /mnt/hdd
+losetup -f -P  Fedora-Developer-38-20230519.n.0-sda.raw
+losetup -l
+mount /dev/loop0p2 /mnt/hdd/mnt/
+mount --bind WORKDIR mnt/WORKDIR
+swapon swapfile2
+swapon /swapfile
+screen
+chroot mnt
+mount -t proc proc /proc
+
+cd /WORKDIR/CMS
+export CCACHE_DIR=`pwd`/CCACHE
+
+
+ 
+a quel punto lavorare dentro lo screen, che e' la Fedora. Host vero e proprio e' una Debian, e si puo' usare fuori dallo screen
+
+- come preparare la macchina (appunti vari)
+
+distribuzione Fedora da 
+https://dl04.fedoraproject.org/pub/alt/risc-v/disk_images/Fedora-Developer-38-20230519.n.0.SiFive.Unmatched.and.QEMU/
+
+
+creazione swapfile: 
+dd if=/dev/zero of=/swapfile bs=1024 count=1000000
+swapon /swapfile
