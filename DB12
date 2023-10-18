@@ -25,14 +25,34 @@ options:
   --version             show program's version number and exit
 
 
-
-
-
 Girare:
 
 db12 wholenode
 
 fa spawn di 4 copie ....
 
+[root@starfive DB12]# db12 wholenode
+WARNING:root:You are executing DB12 using python3, DB12 score is generally higher than it was with python2
+WARNING:root:Trying to apply a correction...
+WARNING:root:Cannot correct the score, return the raw norm: the python version 3.11 has not been analyzed.
+WARNING:root:Versions available are: 3.9
+WARNING:root:Please consult https://zenodo.org/record/5647834 for further details
+WARNING:root:You are executing DB12 using python3, DB12 score is generally higher than it was with python2
+WARNING:root:Trying to apply a correction...
+WARNING:root:Cannot correct the score, return the raw norm: the python version 3.11 has not been analyzed.
+WARNING:root:Versions available are: 3.9
+WARNING:root:Please consult https://zenodo.org/record/5647834 for further details
+WARNING:root:You are executing DB12 using python3, DB12 score is generally higher than it was with python2
+WARNING:root:Trying to apply a correction...
+WARNING:root:Cannot correct the score, return the raw norm: the python version 3.11 has not been analyzed.
+WARNING:root:Versions available are: 3.9
+WARNING:root:Please consult https://zenodo.org/record/5647834 for further details
+WARNING:root:You are executing DB12 using python3, DB12 score is generally higher than it was with python2
+WARNING:root:Trying to apply a correction...
+WARNING:root:Cannot correct the score, return the raw norm: the python version 3.11 has not been analyzed.
+WARNING:root:Versions available are: 3.9
+WARNING:root:Please consult https://zenodo.org/record/5647834 for further details
+4 11.711420068679706 2.9278550171699265 2.9277992238672343 2.9239766081871346
+2.8998956037582646 2.9239766081871346 2.943600612268927 2.9439472444653787
 
 
