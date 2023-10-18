@@ -1,0 +1,38 @@
+- prendere da GIT
+
+https://github.com/DIRACGrid/DB12
+
+- OPPURE (MEGLIO)
+
+pip install DB12
+
+- esecuzione
+
+[root@starfive DB12]# db12 -h
+usage: db12 [-h] [--version] {single,wholenode,multiple} ...
+
+Run the DB12 benchmark from the command line. Unless the token "single" is used, the script prints the following results to two lines on stdout: COPIES SUM
+ARITHMETIC-MEAN GEOMETRIC-MEAN MEDIAN RAW-RESULTS
+
+positional arguments:
+  {single,wholenode,multiple}
+    single              get normalized power of one CPU
+    wholenode           Run as many copies as needed to occupy the whole machine
+    multiple            Run multiple copies in parallel
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+
+
+
+
+
+Girare:
+
+db12 wholenode
+
+fa spawn di 4 copie ....
+
+
+
